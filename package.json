@@ -1,0 +1,28 @@
+{
+    "name": "node-postgresql-restAPI",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel src --out-dir dist",
+        "start": "node dist/index.js",
+        "dev": "nodemon src/index.js --exec babel-node"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/polyfill": "^7.4.4",
+        "express": "^4.17.1",
+        "morgan": "^1.9.1",
+        "pg": "^7.11.0",
+        "pg-hstore": "^2.3.3",
+        "sequelize": "^5.9.4"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.5.0",
+        "@babel/core": "^7.5.0",
+        "@babel/node": "^7.5.0",
+        "@babel/preset-env": "^7.5.2"
+    }
+}
